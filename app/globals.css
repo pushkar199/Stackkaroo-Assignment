@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container {
+  width: 100%;
+  background: repeat-y center / contain
+      linear-gradient(to left, #e68f501a, #0a56f11a),
+    url("../public/assets/images/bg-dots.png");
+}
+
+.heading1 {
+  @apply text-3xl sm:text-head1 text-bright-blue font-bold;
+}
+
+.heading2 {
+  @apply text-2xl lg:text-3xl text-pale-orange font-semibold;
+}
+
+.heading3 {
+  @apply text-xl text-bright-blue font-semibold;
+}
+
+.body-text {
+  @apply text-sm sm:text-lg xl:text-xl text-dark-1;
+}
+
+.subheading {
+  @apply sm:text-lg md:text-xl font-medium text-dark-1;
+}
+
+.grad-border {
+  border-width: 5px;
+  border-style: solid;
+  border-image-source: linear-gradient(180deg, #0a56f1 0%, #e68f50 100%);
+}
+
+/* NAV Styles */
+.navLink {
+  @apply inline-block m-2 font-semibold py-3 px-4 transition-all cursor-pointer active:bg-white active:rounded-[6em] active:shadow-gray active:font-medium;
+}
+
+.navLink__mobile {
+  @apply font-semibold my-1 transition-all cursor-pointer active:bg-white active:rounded-[6em] active:shadow-gray active:font-medium;
+}
+
+.mobile-nav-gradient{
+  background: linear-gradient(to left, #e68f501a, #0a56f11a), white;
+}
